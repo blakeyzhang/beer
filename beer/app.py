@@ -8,7 +8,8 @@
 """
 import os
 import inspect
-from webob import Request, Response
+from .request import Request
+from .response import Response
 from jinja2 import Environment, FileSystemLoader
 from parse import parse
 from requests import Session as RequestsSession
